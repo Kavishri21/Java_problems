@@ -14,7 +14,7 @@ public class ceiling {
         System.out.println("enter the target element: ");
         //the task is to find the smallest number which is greater than or equal to the target
         int target = scan.nextInt();
-
+        
         int ans = ceilingg(arr, target);
         System.out.println("the smallest no. which is greater then or equal to the "+ target + " is " + ans);
         scan.close();
