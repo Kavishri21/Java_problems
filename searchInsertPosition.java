@@ -1,6 +1,7 @@
 package samplePackage1;
 import java.util.*;
 
+//https://leetcode.com/problems/search-insert-position/description/
 public class searchInsertPosition {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -26,7 +27,7 @@ public class searchInsertPosition {
         int start = 0;
         int end = nums.length - 1;
         
-        while(start<end){
+        while(start<=end){
             int middle = start +(end-start)/2;
 
             if(nums[middle] > target){
@@ -39,32 +40,7 @@ public class searchInsertPosition {
                 return middle;
             }
         }
-        return insertPosition(nums,target,start,end);
-    }
-
-    static int insertPosition(int[]arr,int target,int start,int end){
-        int ans = 0;
-        System.out.println(start);
-        System.out.println(end);
-        if(start==0){
-            if(target<=arr[start]){
-                ans = 0;
-            }
-            else{
-                ans = 1;
-            }
-        }
-        else if(start==arr.length-1){
-            if(target>arr[start]){
-                ans = arr.length;
-            }
-            else{
-                ans = start -1;
-            }
-        }
-        else{
-            ans= start - 1;
-        }
-        return ans;
+        return start;
+        //the start indx will contain the index of the missong target element ra 
     }
 }
