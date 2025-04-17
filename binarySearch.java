@@ -25,17 +25,17 @@ public class binarySearch {
 
     }
 
-    static int BinSearch(int[] arr, int target){
+    static int BinSearch(int[] nums, int target){
         int start = 0;
-        int end = arr.length - 1;
+        int end = nums.length - 1;
         
         while(start<end){
             int middle = start +(end-start)/2;
 
-            if(arr[middle] > target){
+            if(nums[middle] > target){
                 end = middle - 1;
             }
-            else if(arr[middle] < target){
+            else if(nums[middle] < target){
                 start = middle + 1;
             }
             else{
@@ -52,7 +52,7 @@ public class binarySearch {
 
         
         
-        while(start<end){
+        while(start<=end){
             int middle = start +(end-start)/2;
 
             if(arr[middle]==target){
@@ -66,7 +66,6 @@ public class binarySearch {
                     end = middle-1;
                 }
             }
-            
             else{
                 if(arr[middle] > target){
                     end = middle - 1;
