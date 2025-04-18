@@ -1,5 +1,7 @@
 package samplePackage1;
 import java.util.*;
+//https://leetcode.com/problems/sqrtx/description/
+//https://leetcode.com/problems/valid-perfect-square/description/
 
 public class squareRootBinSearch {
     public static void main(String[] args) {
