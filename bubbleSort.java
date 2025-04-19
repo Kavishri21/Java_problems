@@ -22,7 +22,7 @@ public class bubbleSort {
             swapped = false;
             //we r doing this to skip the iteration when the array is already sorted
             //so when i=0, there happens no swap means the array is sorted
-            //by using this, since the swapped value is false the loop will break withou checking i=1 or greater values
+            //by using this, since the swapped value is false the loop will break without checking i=1 or greater
             for (int j =1;j<arr.length;j++){
                 if(arr[j]<arr[j-1]){
                     int temp = arr[j];
